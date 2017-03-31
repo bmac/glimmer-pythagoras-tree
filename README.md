@@ -1,7 +1,7 @@
 # glimmer-pythagoras-tree
 
-This README outlines the details of collaborating on this Glimmer application.
-A short introduction of this app could easily go here.
+Glimmer implementation of a pythagoras tree. Original code adapted
+from https://github.com/Swizec/react-fractals.
 
 ## Prerequisites
 

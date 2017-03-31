@@ -1,0 +1,28 @@
+<g transform="translate({{@x}} {{@y}}) {{rotate}}">
+  <rect width={{@w}} height={{@w}}
+        x="0" y="0"
+        style="fill: {{fill}}" />
+
+  {{#if show}}
+  <pythagoras-tree
+    @w={{calc.nextLeft}}
+    @x={{0}}
+    @y={{y}}
+    @lvl={{nextLvl}}
+    @maxlvl={{@maxlvl}}
+    @heightFactor={{@heightFactor}}
+    @lean={{@lean}}
+    @left={{true}}
+    />
+
+  <pythagoras-tree
+    @w={{calc.nextRight}}
+    @x={{x}}
+    @y={{y}}
+    @lvl={{nextLvl}}
+    @maxlvl={{@maxlvl}}
+    @heightFactor={{@heightFactor}}
+    @lean={{@lean}}
+    @right={{true}} />
+  {{/if}}
+</g>
